@@ -11,6 +11,8 @@ wheels/
 
 #other file
 /output
-*py*
+*.ipynb
 *.lock
 *.jar
+.python-version
+pyproject.toml
