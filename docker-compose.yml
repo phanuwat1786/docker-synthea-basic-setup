@@ -1,0 +1,7 @@
+services:
+  synthea:
+    build: .
+    volumes: 
+      - ./synthea:/home/ubuntu/syntheasudo du -sh *
+      - ./output:/home/ubuntu/output
+    command: 'java -jar /home/ubuntu/synthea-with-dependencies.jar "" -p 10000 -c /home/ubuntu/synthea/synthea.properties'Nevada
