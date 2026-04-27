@@ -2,6 +2,6 @@ services:
   synthea:
     build: .
     volumes: 
-      - ./synthea:/home/ubuntu/syntheasudo du -sh *
-      - ./output:/home/ubuntu/output
-    command: 'java -jar /home/ubuntu/synthea-with-dependencies.jar "" -p 10000 -c /home/ubuntu/synthea/synthea.properties'
+      - ./synthea:/home/ubuntu/synthea
+      - ./output:/home/ubuntu/output/new_path
+    command: 'java -jar /home/ubuntu/synthea-with-dependencies.jar -p 10 --exporter.baseDirectory="/home/ubuntu/output/new_path"'
